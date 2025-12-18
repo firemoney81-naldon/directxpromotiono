@@ -1,71 +1,101 @@
-<!DOCTYPE html><html lang="ko"><head>
-<meta charSet="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="테슬라보험료"/>
-<meta property="og:site_name" content="테슬라보험료" />
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="/"/>
-<meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+<!DOCTYPE html>
+<html lang="ko" ng-app="PC/AppModule">
+<head>
+    <base href="/"></base>
+    <!--[if IE]><script type="text/javascript">
+    // Fix for IE ignoring relative base tags.
+    (function() {
+      var baseTag = document.getElementsByTagName('base')[0];
+      baseTag.href = baseTag.href;
+    })();
+    </script><![endif]-->
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+<meta property="og:title" content="테슬라보험료 비교 사이트 활용 시 동일 조건 체크법" />
+<meta property="og:site_name" content="테슬라보험료 비교 사이트 활용 시 동일 조건 체크법" />
+
 <meta name="description" content="" />
-<meta property="og:description" content=""/>
+<meta property="og:description" content="" />
 <meta itemprop="description" content="" />
-<meta name="twitter:description" content=""/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="테슬라보험료"/>
-<meta name="twitter:url" content="/"/>
-<meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+<meta name="twitter:description" content="" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="테슬라보험료 비교 사이트 활용 시 동일 조건 체크법" />
+<meta name="twitter:image:width" content="320" />
+<meta name="twitter:image:height" content="320" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image:width" content="320" />
+<meta property="og:image:height" content="320" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta name="google-site-verification" content="wfZydaMj4Kbr_OrpLwv0BIRA1K9HwwFN5Plul6ZCz5k" />
 <meta name="naver-site-verification" content="7f20761ec77a5fc584227665b46eb09f986fa321" />
 
 
-<meta name="location" content="South Korea" />
-<meta name="distribution" content="global" />
-<meta name="rating" content="general" />
-<meta itemprop="name" content="" />
+<link rel="canonical" href="/">
 
-	<link rel="stylesheet" href="./Img/reset.css">
-	<link rel="stylesheet" href="./Img/main.css">
-	<link rel="stylesheet" href="./common/swiper.css" />
-	<script src="./jquery.min.js"></script>
-	<script src="./jquery.serializeObject.min.js"></script>
-	<script src="./json3.min.js"></script>
-	<script src="./bxslider.js" type="text/javascript"></script>
-	<script src="./common/moment.min.js"></script>
+<meta name="robots" content="index, follow">
+<meta name="NaverBot" content="index, follow" />
+<meta name="Yeti" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
 
 
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
 
-    <!-- 리소스 힌트 (성능 최적화) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="/">
+    <script src="https://ssl.pstatic.net/static/calendar/js/calendar_scrap_ssl.js"></script>
+    <script src="externals/moment.min.js"></script>
+    <script src="externals/moment-timezone-with-data-2010-2020.min.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js"></script>
+  </head>
 
-    <!-- Apple iOS 최적화 -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="테슬라 보험료 (2026)">
+<body class="{{'biz' + $stateParams.biztpId}}" ng-class="{
+    nopreview : isPreview,
+    ie8fix : isIE8,
+    event : $location.path().match('/event'),
+    talk : $location.path().match('/talk') || $location.path().match('/delivery-address'),
+    partner_preview : $location.path().match('/preview')
+}">
 
-    <!-- Android Chrome 최적화 -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="테슬라 보험료 (2026)">
+<app></app>
 
-    <!-- 모바일 뷰포트 최적화 -->
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<!-- LCS log -->
+<script src="lcslog.js"></script>
+<script type="text/javascript">
+    // lcs 호출
+    window.lcs_SerName = window.location.hostname === 'booking.naver.com' ? "lcs.naver.com" : "alpha-lcs.naver.com";
+    window.lcsCallFirst = true;
+    if (!(window.location.pathname == '/booked/list' && window.location.search == '')
+            && !(/^\/booking\/(5|6|8|12)\/bizes\/[0-9]+\/search$/.test(window.location.pathname))
+            && !(/^\/[0-9]+\/booking\/*/.test(window.location.pathname))
+            && (window.location.pathname.indexOf("/booking/svc/") == -1)) {
+        window.lcsLocation = window.location;
+        lcs_do();
+    }
+    
+    var userAgent = navigator.userAgent
+    var isIeLt11 = !!(userAgent && (userAgent.match('Trident') || userAgent.match('MSIE')) && !userAgent.match('rv'))
+    if (isIeLt11) {
+        location.href='/happyBrowser.html'
+    }
+</script>
+<script type="text/javascript" src="polyfills.e14db188ff6e521b21b0.js"></script><script type="text/javascript" src="vendor.e14db188ff6e521b21b0.js"></script><script type="text/javascript" src="app.e14db188ff6e521b21b0.js"></script>
 
-    <!-- 모바일 브라우저 최적화 -->
-    <meta name="format-detection" content="telephone=no, address=no, email=no">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="MobileOptimized" content="width">
 
-
-
-
-<title>테슬라보험료</title>
-
+<title>테슬라보험료 비교 사이트 활용 시 동일 조건 체크법</title>
 <meta name="next-head-count" content="25"/>
+<meta charSet="utf-8"/>
 <meta name="format-detection" content="telephone=no"/>
 
 
-
+  
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,549 +103,456 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "테슬라 모델 Y의 보험료가 모델 3보다 비싼가요?",
+          "name": "테슬라 보험료는 일반 내연기관차보다 왜 비싼가요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "일반적으로 모델 Y는 모델 3보다 차량 가액이 높고, 차종별 등급 위험률이 다르게 책정되므로 모델 Y의 보험료가 더 높게 산정될 수 있습니다. 정확한 비교를 위해서는 개인 조건에 맞는 다이렉트 견적 비교가 필수입니다."
+            "text": "테슬라는 고가의 배터리 팩과 전용 알루미늄 바디 구조로 인해 사고 시 수리비가 높게 책정되며, 이는 자차 보험료 상승의 주요 원인이 됩니다."
           }
         },
         {
           "@type": "Question",
-          "name": "2026년 기준, 테슬라 보험료를 절약할 수 있는 가장 큰 할인 특약은 무엇인가요?",
+          "name": "테슬라 보험료를 가장 저렴하게 가입하는 방법은 무엇인가요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "가장 효과적인 특약은 '주행거리 마일리지 할인'과 '첨단 안전장치(ADAS) 할인'입니다. 특히 테슬라 차량의 경우 오토파일럿 기능을 활용한 안전 운전 점수(UBI) 특약이 큰 비중을 차지합니다."
+            "text": "전기차 전용 특약을 활용하고, 주행거리 마일리지 할인, 안전운전 점수(Tmap) 할인을 중복 적용하는 것이 가장 효과적입니다."
           }
         }
       ]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "2026년 테슬라 보험료 최저가 비교 및 심층 분석 가이드",
-      "author": {
-        "@type": "Organization",
-        "name": "테슬라 전기차 보험 전문가"
-      },
-      "datePublished": "2025-12-13",
-      "dateModified": "2026-01-01"
-    }
-    </script>
 
     <style>
-        /* 기존 스타일 기반, 테슬라/전기차 테마로 색상 개선 */
         :root {
-            --primary-color: #CC0000; /* 테슬라 레드, 강조 */
-            --secondary-color: #004d99; /* 진한 남색/딥블루 */
-            --accent-color: #FFD700; /* 골드/노란색 */
-            --text-color: #333;
-            --bg-light: #f0f4f8; /* 부드러운 배경색 */
-            --bg-mid: #e6f2ff; /* 연한 블루 */
-            --btn-cta: #0066cc; /* 액션 버튼 컬러 */
-            --border-color: #e0e0e0;
+            --primary-color: #1a237e; /* 딥 네이비 */
+            --secondary-color: #0d47a1; /* 로열 블루 */
+            --accent-color: #00c853; /* 세이프 그린 */
+            --bg-color: #f4f7f9;
+            --text-main: #263238;
+            --text-sub: #546e7a;
+            --white: #ffffff;
+            --border-light: #eceff1;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-        
-        body { font-family: "Noto Sans KR", sans-serif; margin: 0; padding: 0; line-height: 1.8; background-color: var(--bg-light); color: var(--text-color); word-break: keep-all; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        
-        /* 헤더 */
-        header { background-color: var(--secondary-color); color: white; padding: 2.5rem 1rem; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); border-bottom: 5px solid var(--primary-color); }
-        header h1 { font-size: 2.5rem; font-weight: 700; margin: 0.5rem 0 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 2rem; margin: 0; }
-        nav a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s ease, transform 0.3s ease; font-size: 1.1rem; }
-        nav a:hover { color: var(--accent-color); transform: translateY(-2px); }
+        body {
+            font-family: "Pretendard", "Noto Sans KR", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            word-break: keep-all;
+        }
 
-        /* 메인 컨텐츠 영역 */
-        main { max-width: 1000px; margin: 2.5rem auto; background-color: white; box-shadow: 0 0 20px rgba(0,0,0,0.1); border-radius: 12px; padding-bottom: 30px; }
-        
-        /* 제목 스타일 */
-        h2 { color: var(--primary-color); font-weight: 700; font-size: 2.2rem; margin-top: 2rem; padding: 1rem 0 10px; border-bottom: 3px solid var(--bg-mid); text-align: center; }
-        h3 { color: var(--secondary-color); font-size: 1.6rem; margin-top: 2rem; border-left: 5px solid var(--primary-color); padding-left: 15px; font-weight: 600; }
-        h4 { color: #444; font-size: 1.3rem; margin-top: 1.5rem; font-weight: 500; }
-        p { text-align: justify; margin-bottom: 1.5rem; padding: 0 1.5rem; }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
 
-        /* 견적 폼 영역 */
-        .quote-section { background-color: var(--bg-mid); padding: 40px 1.5rem; border-radius: 12px; margin: 2rem 1.5rem; border: 1px solid var(--border-color); }
-        .quote-section h3 { text-align: center; border: none; padding-left: 0; color: var(--primary-color); margin-bottom: 25px; font-size: 1.8rem; }
-        .form-group { margin-bottom: 20px; padding: 0 15px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color); }
-        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1em; }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.05rem;
+        }
 
-        /* CTA 버튼 */
-        .cta-button { display: block; background-color: var(--primary-color); color: white; font-weight: 700; padding: 1rem 3rem; border-radius: 50px; text-decoration: none; margin: 3rem auto 2rem; transition: background-color 0.3s, transform 0.3s; text-align: center; font-size: 1.3rem; max-width: 400px; }
-        .cta-button:hover { background-color: #b30000; transform: translateY(-3px); }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
 
-        /* 표 스타일 */
-        table { width: calc(100% - 3rem); margin: 2rem 1.5rem; border-collapse: collapse; }
-        th, td { padding: 1rem; border: 1px solid var(--border-color); text-align: center; font-size: 0.95rem; }
-        th { background-color: var(--secondary-color); color: white; font-weight: 700; }
-        tr:nth-child(even) { background-color: #f8f8f8; }
+        nav {
+            background: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-light);
+        }
 
-        /* 키워드 태그 */
-        .keyword-tags { margin: 2rem 1.5rem; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-        .keyword-tags a { background-color: var(--bg-mid); color: var(--secondary-color); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; text-decoration: none; transition: background-color 0.3s, transform 0.3s; border: 1px solid #cce0ff; }
-        .keyword-tags a:hover { background-color: #a3c4e8; transform: scale(1.05); }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+        }
 
-        /* FAQ 스타일 (아코디언) */
-        dl { padding: 0 1.5rem; }
-        dl dt { font-weight: 700; margin-top: 1.5rem; cursor: pointer; color: var(--secondary-color); background-color: var(--bg-mid); padding: 1rem; border-left: 5px solid var(--primary-color); transition: background-color 0.3s; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
-        dl dt::after { content: '▼'; font-size: 0.8em; margin-left: 10px; transition: transform 0.3s; }
-        dl dt.active::after { transform: rotate(180deg); }
-        dl dt:hover { background-color: #dbeaff; }
-        dl dd { margin: 0.5rem 0 1.5rem 1rem; padding: 1rem; border: 1px dashed #ccc; border-top: none; background-color: #fff; display: none; }
-        dl dt.active + dd { display: block; }
-        
-        /* 정보 박스 */
-        .info-box { background-color: var(--bg-mid); padding: 20px; border-radius: 8px; margin: 20px 1.5rem; border-left: 5px solid var(--primary-color); }
-        .info-box strong { color: var(--primary-color); font-weight: 700; }
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
 
-        /* 외부 링크 */
-        .external-link { color: var(--btn-cta); font-weight: 500; text-decoration: underline; margin-top: 5px; display: inline-block; }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
 
-        /* 푸터 */
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; background-color: #e0eaf1; margin-top: 3rem; border-top: 1px solid #d0dbe4; }
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 3rem;
+            background-color: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
 
-        /* 이미지 삽입을 위한 스타일 (가이드라인 준수) */
-        .image-container { text-align: center; margin: 30px 0; }
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            border-left: 8px solid var(--secondary-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: var(--secondary-color);
+            margin-top: 2.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .info-box {
+            background-color: #e3f2fd;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #bbdefb;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 1.2rem;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1.2rem;
+            border-bottom: 1px solid var(--border-light);
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #f1f8ff;
+        }
+
+        /* 체류시간 증대를 위한 입력 폼 디자인 */
+        .calculator-area {
+            background-color: #f8f9fa;
+            padding: 3rem;
+            border-radius: 15px;
+            border: 2px dashed #cfd8dc;
+            margin-top: 3rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-color);
+        }
+
+        .faq-list dt {
+            font-weight: 700;
+            background-color: #f1f4f8;
+            padding: 1.2rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        .faq-list dd {
+            padding: 1.2rem;
+            border: 1px solid #f1f4f8;
+            border-top: none;
+            margin: 0;
+            display: none;
+            background-color: var(--white);
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: #eceff1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-sub);
+        }
+
+        footer {
+            background-color: #263238;
+            color: #cfd8dc;
+            padding: 4rem 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .external-links {
+            margin-top: 2rem;
+        }
+
+        .external-links a {
+            color: #90caf9;
+            margin: 0 10px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>2026년 **테슬라 보험료** 최저가 다이렉트 비교 및 절약 솔루션</h1>
-            <nav>
-                <ul>
-                    <li><a href="#비교견적">견적 비교</a></li>
-                    <li><a href="#분석">심층 분석</a></li>
-                    <li><a href="#절약팁">절약 팁</a></li>
-                    <li><a href="#차종별">차종별 비교</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="비교견적">
-            <div class="container">
-                <h2>**테슬라 보험료** 1분 다이렉트 비교 견적 (2026년 최신)</h2>
-                <p>
-                    **테슬라 보험료**는 일반 내연기관 차량보다 비싼 경향이 있습니다. 특히 고가인 차량 가액과 비싼 수리비, 그리고 첨단 장치(ADAS)의 수리 비용이 주요 원인입니다. 2026년 현재, 여러 보험사들은 테슬라 오너들을 위한 다양한 할인 특약을 제공하고 있습니다. 가장 합리적인 **전기차 보험료**를 찾기 위해서는 모든 보험사의 견적을 한눈에 비교하는 것이 필수적입니다.
-                </p>
+<header>
+    <h1>2026년 테슬라 보험료 산정 리포트</h1>
+    <p>모델별 보험료 분석부터 자차 할증 원인 및 최적의 특약 구성까지</p>
+</header>
 
-                <div class="quote-section">
-                    <h3>내 차종, 내 나이에 맞는 **테슬라 다이렉트 보험** 최저가 찾기</h3>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="car_model">테슬라 모델 (차종명키워드)</label>
-                            <select id="car_model" required>
-                                <option value="">차종을 선택하세요</option>
-                                <option value="model_3">모델 3</option>
-                                <option value="model_y">모델 Y</option>
-                                <option value="model_s">모델 S</option>
-                                <option value="model_x">모델 X</option>
-                                <option value="cybertruck">사이버트럭</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="car_trim">상세 트림 (예: 롱 레인지, 퍼포먼스)</label>
-                            <input type="text" id="car_trim" placeholder="정확한 트림명을 입력해주세요" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="driver_age">주 운전자 나이대 (나이대키워드)</label>
-                            <select id="driver_age" required>
-                                <option value="">나이대를 선택하세요</option>
-                                <option value="20_25">만 20세 ~ 만 25세 (**만 20세 테슬라 보험료**)</option>
-                                <option value="26_29">만 26세 ~ 만 29세 (**만 26세 테슬라 보험료**)</option>
-                                <option value="30_34">만 30세 ~ 만 34세 (**만 30세 이상 테슬라 보험료**)</option>
-                                <option value="35_39">만 35세 ~ 만 39세</option>
-                                <option value="40_49">만 40대 테슬라 보험료</option>
-                                <option value="50_plus">만 50세 이상</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="driver_exp">운전 경력</label>
-                            <select id="driver_exp" required>
-                                <option value="">운전 경력을 선택하세요</option>
-                                <option value="new">1년 미만 (초보)</option>
-                                <option value="1to3">1년 ~ 3년</option>
-                                <option value="3to5">3년 ~ 5년</option>
-                                <option value="over5">5년 이상</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="driving_scope">운전자 범위</label>
-                            <select id="driving_scope" required>
-                                <option value="single">본인 한정</option>
-                                <option value="couple">부부 한정</option>
-                                <option value="family">가족 한정</option>
-                                <option value="any">누구나 운전</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">이름</label>
-                            <input type="text" id="name" placeholder="이름을 입력하세요" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">연락처</label>
-                            <input type="tel" id="phone" placeholder="휴대폰 번호를 입력하세요" required>
-                        </div>
-                        <button type="submit" class="cta-button">2026년 **테슬라 보험료** 최저가 견적 비교 시작</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+<nav>
+    <ul>
+        <li><a href="#intro">산정기준</a></li>
+        <li><a href="#comparison">모델별 비교</a></li>
+        <li><a href="#factors">할증요인</a></li>
+        <li><a href="#calculator">견적시뮬레이션</a></li>
+        <li><a href="#faq">자주묻는질문</a></li>
+    </ul>
+</nav>
 
-        <section id="분석">
-            <div class="container">
-                <h2>**테슬라 보험료**가 비싼 핵심 원인 분석 (2026년 업데이트)</h2>
-                <p>
-                    **전기차 보험료** 중에서도 특히 **테슬라 보험료**가 높게 책정되는 이유를 정확히 이해하는 것이 보험료 절약의 첫걸음입니다. 2026년 데이터를 기준으로, 보험 개발원과 국내 주요 보험사들이 테슬라 차량의 위험률을 높게 평가하는 주된 요인은 구조적인 문제에 기인합니다.
-                </p>
-
-                <h3>1. 고가 부품 및 수리 비용의 구조적 문제</h3>
-                <p>
-                    테슬라 차량은 프런트와 리어에 통합된 주조 구조물(기가 캐스팅)을 사용하여 차체 강성을 높이고 제조 비용을 절감했지만, 사고 시 해당 부품을 통째로 교체해야 하는 경우가 많습니다. 특히, **모델 Y**나 **모델 3**의 경우 경미한 사고에도 배터리 팩 주변 구조물 손상 위험이 커, 배터리 교체로 이어질 경우 수천만 원의 수리비가 발생할 수 있습니다. 이는 보험사의 **자차 보험료** 산정에 치명적으로 작용합니다. 
-                </p>
-                <div class="info-box">
-                    <strong>주요 원인:</strong> 테슬라는 국내 정비 인프라가 부족하여 공식 서비스 센터 의존도가 높고, 부품 수급 기간이 길어 휴차료(렌터카 비용) 발생 가능성이 높습니다. 이러한 '수리 환경' 문제도 **테슬라 보험료** 인상 요인으로 작용합니다.
-                </div>
-
-                <h3>2. 차량 등급에 따른 높은 위험률 반영</h3>
-                <p>
-                    보험 개발원에서는 매년 차량 모델별 사고 위험도를 평가하여 '차량 모델 등급'을 책정합니다. 등급은 1~26등급으로 나뉘며, 숫자가 높을수록 보험료가 저렴해집니다. **테슬라 모델 3**와 **모델 Y**의 경우, 초기에는 낮은 등급을 받아 보험료가 매우 비쌌습니다. 비록 등급이 소폭 상향 조정되는 추세지만, 여전히 일반 국산차 대비 낮은 등급에 머무는 경우가 많아 **테슬라 보험료**를 높이는 핵심 요소입니다. **모델 S**나 **모델 X**와 같은 고성능 차량은 더 낮은 등급을 받기 쉽습니다.
-                </p>
-
-                <h3>3. 첨단 기술(ADAS)의 양면성</h3>
-                <p>
-                    오토파일럿, FSD 등의 첨단 기능은 분명 사고를 예방하는 효과가 있지만, 이러한 기능에 사용되는 고해상도 카메라, 센서, 레이더 등의 부품이 파손되면 교체 및 보정 비용이 상상을 초월합니다. 범퍼나 윈드실드 교체 시에도 센서 재보정이 필요하며, 이로 인해 일반 경미한 사고도 큰 수리 비용으로 이어지기 때문에 **자차 보험료**가 높게 책정됩니다.
-                </p>
-            </div>
-        </section>
+<main>
+    <section id="intro">
+        <h2>테슬라 보험료 산정의 핵심 매커니즘</h2>
+        <p>2026년 현재 자동차 보험 시장에서 전기차, 특히 테슬라는 독특한 위치를 차지하고 있습니다. 일반적인 내연기관 차량과 달리 테슬라 보험료는 기가 캐스팅 공법에 따른 수리 편의성 저하와 고가의 리튬 이온 배터리 팩 가격이 직결됩니다. 자차 보험료 항목이 전체 보험료의 60퍼센트 이상을 차지하는 구조적 특징을 보이며, 이는 차량 가액의 하락 속도보다 사고 발생 시 교체 비용의 비중이 크기 때문입니다.</p>
         
-        <section id="절약팁">
-            <div class="container">
-                <h2>**테슬라 보험료** 최대 절약을 위한 6가지 핵심 팁 (2026년 솔루션)</h2>
-                <p>
-                    2026년 **전기차 보험** 시장은 점차 성숙하고 있으며, 다양한 특약과 할인 프로그램이 등장하고 있습니다. **테슬라 모델 3 보험료**나 **모델 Y 보험료**를 효과적으로 절약하기 위한 실질적인 방법을 제시합니다.
-                </p>
-
-                <h3>1. UBI (운전습관 연계 보험) 특약 활용 극대화</h3>
-                <p>
-                    테슬라 차량은 자체적으로 운전자의 가속, 제동, 코너링 데이터를 수집합니다. 일부 보험사는 이 데이터를 활용하여 안전 운전 점수(Safety Score)를 기반으로 보험료를 할인해 주는 UBI 특약을 제공합니다. 평소 안전 운전하는 습관을 가진 **만 30세 이상** 운전자라면 이 특약으로 최대 **20% 이상**의 할인을 받을 수 있습니다. 이는 **테슬라 다이렉트 보험** 가입 시 가장 큰 절감 효과를 낼 수 있는 방법입니다.
-                </p>
-
-                <h3>2. 주행거리 (마일리지) 특약은 필수</h3>
-                <p>
-                    테슬라 오너 중 상당수는 단거리 출퇴근이나 레저용으로 차량을 운행하여 연간 주행거리가 짧습니다. 연간 1만 킬로미터 이하 주행 시 보험료를 할인해 주는 마일리지 특약은 **전기차 보험**에서 기본 중의 기본입니다. 주행거리가 3천 km 미만이라면 최대 할인율인 **35~40%**까지 절약할 수 있습니다.
-                </p>
-                
-                <h3>3. 운전자 한정 및 연령 특약 선택의 묘미</h3>
-                <p>
-                    운전 가능 범위를 '본인 한정' 또는 '부부 한정'으로 좁히고, 운전 가능한 최소 연령을 높게 설정할수록 보험료가 크게 내려갑니다. 특히 **만 26세 테슬라 보험료**와 **만 30세 이상**의 보험료 차이가 크므로, 가족 중 나이가 어린 운전자가 있다면 운전자 범위에서 제외하는 것을 고려해야 합니다.
-                </p>
-
-                <h3>4. 배터리 특약 및 신가액 보상 가입</h3>
-                <p>
-                    테슬라 차량의 배터리는 고가이며 감가상각이 크지 않으므로, 사고 시 보험사와의 보상 분쟁을 줄이기 위해 **배터리 특약**을 선택해야 합니다. 일부 보험사는 일정 기간 동안 배터리 손상 시 감가상각 없이 신품 가격으로 보상하는 '신가액 보상 특약'을 제공하니 반드시 확인해야 합니다.
-                </p>
-
-                <h3>5. 대물 배상 한도 10억 원 이상 선택</h3>
-                <p>
-                    **테슬라 모델 S**나 **모델 X**와 같은 고성능 차량은 사고 시 타인의 고가 수입차나 다중 추돌 사고를 유발할 가능성이 높습니다. 대물 배상 한도를 5억 원에서 10억 원으로 올릴 때 보험료 차이는 크지 않지만, 사고 발생 시 경제적 위험을 크게 낮출 수 있습니다.
-                </p>
-
-                <h3>6. **테슬라 다이렉트 보험** 및 비교 플랫폼 활용</h3>
-                <p>
-                    보험 설계사를 통한 가입 대신 **다이렉트 보험**을 이용하면 사업비가 절감되어 평균 15% 이상 저렴합니다. 모든 보험사의 **테슬라 보험료** 견적을 실시간으로 비교해주는 전문 플랫폼을 이용하면 가장 저렴한 곳을 쉽게 찾을 수 있습니다.
-                </p>
-                <a href="https://www.fss.or.kr/main/index.do" target="_blank" rel="noopener noreferrer" class="external-link">금융감독원 (FSS) – 보험상품 비교 공시 확인하기</a>
+        <div class="info-box">
+            <strong>함께 많이 찾는 키워드</strong>
+            <div class="tag-container">
+                <span class="tag">테슬라 모델3 하이랜드 보험료</span>
+                <span class="tag">전기차 보조금 반납 보험</span>
+                <span class="tag">테슬라 자차 제외 여부</span>
+                <span class="tag">삼성화재 전기차 전용보험</span>
+                <span class="tag">테슬라 사고 수리비 현황</span>
             </div>
-        </section>
-
-        <section id="차종별">
-            <div class="container">
-                <h2>차종별 **테슬라 보험료** 비교 및 예상 견적 가이드</h2>
-                <p>
-                    **테슬라 보험료**는 차량 모델(차종명키워드), 트림, 연식에 따라 큰 차이를 보입니다. 특히 **모델 Y 보험료**는 높은 판매량과 함께 사고 빈도 및 수리 용이성 등에 따라 요율이 민감하게 변동됩니다. 아래 표는 2026년 기준, 40대 운전자(무사고 3년)를 기준으로 한 가상 비교 견적입니다.
-                </p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>차종 모델</th>
-                            <th>예상 보험료 (연 1회)</th>
-                            <th>차량 등급 (2026년 기준)</th>
-                            <th>자차 보험료 핵심</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>**모델 3 (RWD/Standard Range)**</td>
-                            <td>120만원 ~ 150만원</td>
-                            <td>15~17 등급</td>
-                            <td>**테슬라 모델 3 보험료** 중 가장 합리적. 마일리지 특약 효과 큼.</td>
-                        </tr>
-                        <tr>
-                            <td>**모델 Y (Long Range)**</td>
-                            <td>150만원 ~ 180만원</td>
-                            <td>13~15 등급</td>
-                            <td>**모델 Y 보험료**는 판매량 대비 사고 위험률 반영으로 다소 높음.</td>
-                        </tr>
-                        <tr>
-                            <td>**모델 S (Plaid)**</td>
-                            <td>250만원 ~ 400만원</td>
-                            <td>10 등급 이하</td>
-                            <td>고가 차량 및 고성능 반영, **자차 한도** 설정 시 매우 신중해야 함.</td>
-                        </tr>
-                        <tr>
-                            <td>**모델 X**</td>
-                            <td>220만원 ~ 350만원</td>
-                            <td>12 등급 내외</td>
-                            <td>팔콘윙 도어 등 특수 부품 수리비 고려, **테슬라 모델 X 보험료** 높음.</td>
-                        </tr>
-                        <tr>
-                            <td>**사이버트럭**</td>
-                            <td>별도 책정 (매우 높음 예상)</td>
-                            <td>초기 등급 매우 낮음 예상</td>
-                            <td>국내 초기 도입 시 보험사별 견적이 크게 다를 수 있음.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="padding: 0 1.5rem;">
-                    **함께 많이 찾는 키워드 (나이대/차종)**: **만 20세 모델 3 보험료**, **만 30세 모델 Y 보험료**, **40대 모델 3 롱 레인지 보험료**, **50대 테슬라 모델 Y 스탠다드 보험료**, **테슬라 모델 S 보험료**, **테슬라 모델 X 보험료**.
-                </p>
-
-                <h3>**만 26세 테슬라 보험료**와 연령별 요율 차이</h3>
-                <p>
-                    보험료 산정에서 운전자의 나이는 매우 큰 비중을 차지합니다. 특히 보험사 기준 **만 26세** 미만 운전자는 사고 위험률이 가장 높게 책정되어 **테슬라 보험료**가 300만원 이상으로 나올 수도 있습니다. **만 26세**를 기점으로 보험료가 큰 폭으로 하락하기 시작하며, **만 30세 이상**이 되면 안정적인 요율을 적용받게 됩니다. 보험 가입 시 **운전자 연령 한정 특약**을 정확히 설정하여 불필요한 비용을 줄여야 합니다.
-                </p>
-                <a href="http://www.kidi.or.kr/" target="_blank" rel="noopener noreferrer" class="external-link">보험개발원 (KIDI) – 차량 모델 등급 및 요율 확인하기</a>
-            </div>
-        </section>
-
-        <section id="심층정보">
-            <div class="container">
-                <h2>2026년 **테슬라 보험** 가입 시 고려해야 할 심층 정보</h2>
-                
-                <h3>1. 테슬라의 독점 수리 정책과 보험료의 관계</h3>
-                <p>
-                    테슬라는 자체 서비스 네트워크를 통해 수리를 진행하며, 이는 부품과 기술 정보의 폐쇄성을 의미합니다. 이러한 독점적인 수리 시스템은 보험사 입장에서 손해율을 예측하기 어렵게 만들며, 손해율 관리를 위해 **테슬라 보험료**에 높은 할증을 부과하는 근거가 됩니다. 2026년에는 독립 정비소의 테슬라 정비 참여가 소폭 증가할 것으로 예상되지만, 여전히 공식 서비스 센터 의존도가 높아 긴 수리 기간이 문제로 남아있습니다.
-                </p>
-
-                <h3>2. **모델 3**와 **모델 Y**의 인기 및 사고 통계 반영</h3>
-                <p>
-                    **모델 3**와 **모델 Y**는 국내에서 가장 많이 팔린 **테슬라** 차종입니다. 판매량이 증가함에 따라 사고 통계 데이터도 풍부해지고 있으며, 보험사들은 이 데이터를 기반으로 요율을 더욱 정교하게 조정하고 있습니다. 특히 신차 출고 초기에는 데이터 부족으로 높은 보험료를 적용했으나, 이제는 운전자 연령, 사고 기록, 주행 습관 등 세분화된 데이터가 반영되어 **테슬라 다이렉트 보험**의 할인 폭이 커지고 있습니다.
-                </p>
-                <div class="image-container">
-                    
-                </div>
-                <p>
-                    이와 관련하여 **테슬라 모델 3 롱 레인지 보험료**와 **모델 Y 스탠다드 보험료**를 비교할 때, 차량 가액 차이뿐만 아니라 통계적 사고 위험도 차이까지 고려해야 합니다. 사고가 많은 트림의 경우, 차량 가액이 낮더라도 **자차 보험료**가 높게 책정될 수 있습니다.
-                </p>
-
-                <h3>3. 보험사별 **테슬라** 특약의 차이점 상세 비교</h3>
-                <p>
-                    모든 보험사가 동일한 **테슬라 보험** 특약을 제공하지는 않습니다. 일부 보험사는 **전기차 충전 중 피해 보상 특약**을 기본 제공하거나, **오토파일럿** 기능의 유무에 따른 할인율을 다르게 적용합니다. 예를 들어, DB손해보험, 삼성화재, 현대해상 등 국내 대형 보험사들은 자체적으로 확보한 테슬라 운행 데이터를 활용한 맞춤형 특약을 출시하고 있습니다.
-                </p>
-                <ul>
-                    <li>**A사**: UBI 할인율이 가장 높으나, **만 20세 운전자**에 대한 할증이 높음.</li>
-                    <li>**B사**: **모델 3 롱 레인지**에 대한 차량 등급을 경쟁사 대비 높게 적용하여 기본 보험료가 저렴함.</li>
-                    <li>**C사**: 배터리 신가액 보상 기간이 길어 **테슬라 모델 Y** 신차 오너에게 유리함.</li>
-                </ul>
-                <p>
-                    이처럼 **테슬라 보험료 싼곳**을 찾기 위해서는 단순히 가격만 비교할 것이 아니라, 차량을 보호하는 **자차 보상 조건**과 **배터리 특약**을 중점적으로 비교해야 합니다.
-                </p>
-                <a href="https://namu.wiki/w/자동차%20보험" target="_blank" rel="noopener noreferrer" class="external-link">나무위키 - 자동차 보험 및 특약 종류 상세 정보</a>
-
-                <h3>4. **사이버트럭** 등 신규 차종의 보험 시장 전망 (2026년)</h3>
-                <p>
-                    2026년 이후 **사이버트럭**이 국내에 본격적으로 도입되면 **테슬라 보험료** 시장에 큰 변화가 예상됩니다. 스테인리스 스틸 외골격 구조로 인해 일반적인 사고 수리 방식이 아닌 특수 정비가 필요하여, 보험사들은 해당 차종에 대해 매우 보수적인 요율을 책정할 가능성이 높습니다. **사이버트럭 보험료**는 초기에는 **모델 X**보다 훨씬 높게 형성될 것이며, 보험사별 인수 기준도 까다로울 것으로 전망됩니다.
-                </p>
-
-                <h4>▶ 고액의 수리비에 대비하는 자기부담금 설정 전략</h4>
-                <p>
-                    **테슬라 보험** 가입 시 자기부담금을 높게 설정하면 **자차 보험료**를 줄일 수 있습니다. 하지만 테슬라의 수리비는 워낙 고가이기 때문에, 너무 높게 설정하면 작은 사고에도 운전자가 부담해야 할 금액이 커집니다. 일반적으로 '최소 20만원, 최대 50만원' 또는 '손해액의 20%' 수준에서 설정하는 것이 합리적입니다. **모델 Y**의 경우 부품 가격이 높기 때문에 자기부담금 설정을 신중하게 결정해야 합니다.
-                </p>
-
-                <h4>▶ **테슬라** 운전자들이 놓치기 쉬운 주요 할인 특약 목록 (50개 키워드 충족용)</h4>
-                <ul class="keyword-list">
-                    <li>#주행거리특약할인</li>
-                    <li>#첨단안전장치할인</li>
-                    <li>#블랙박스할인</li>
-                    <li>#자녀할인특약</li>
-                    <li>#교통법규준수할인</li>
-                    <li>#T맵운전습관할인</li>
-                    <li>#UBI보험할인</li>
-                    <li>#테슬라모델3자차보험</li>
-                    <li>#테슬라모델Y다이렉트</li>
-                    <li>#만20세모델Y보험료</li>
-                    <li>#만35세모델3보험료</li>
-                    <li>#40대테슬라보험료비교</li>
-                    <li>#50대모델3보험료견적</li>
-                    <li>#테슬라신차보험료</li>
-                    <li>#테슬라중고차보험료</li>
-                    <li>#배터리신가액특약</li>
-                    <li>#견인거리확대특약</li>
-                    <li>#가족한정운전특약</li>
-                    <li>#부부한정특약</li>
-                    <li>#요일제특약할인</li>
-                    <li>#테슬라사이버트럭보험료</li>
-                    <li>#모델S보험료비교</li>
-                    <li>#모델X자차보험</li>
-                    <li>#전기차자차한도</li>
-                    <li>#테슬라보험료비싼이유</li>
-                    <li>#테슬라보험료싼곳</li>
-                    <li>#DB손해보험테슬라</li>
-                    <li>#삼성화재테슬라보험</li>
-                    <li>#현대해상전기차보험</li>
-                    <li>#KB손해보험테슬라견적</li>
-                    <li>#캐롯손해보험전기차</li>
-                    <li>#운전자연령한정</li>
-                    <li>#테슬라초보운전보험료</li>
-                    <li>#오토파일럿보험할인</li>
-                    <li>#FSD보험료영향</li>
-                    <li>#테슬라정비소문제</li>
-                    <li>#테슬라보험갱신주의사항</li>
-                    <li>#테슬라긴급출동서비스</li>
-                    <li>#대물배상10억특약</li>
-                    <li>#테슬라모델3퍼포먼스보험료</li>
-                    <li>#테슬라모델Y롱레인지보험료</li>
-                    <li>#테슬라모델3스탠다드보험료</li>
-                    <li>#테슬라보험사별비교</li>
-                    <li>#2026년전기차보험</li>
-                    <li>#만30세운전습관할인</li>
-                    <li>#테슬라보험료계산기</li>
-                </ul>
-
-                <a href="https://www.ftc.go.kr/policy/policy_02.jsp?type=policy&pageid=255" target="_blank" rel="noopener noreferrer" class="external-link">공정거래위원회 - 소비자 피해 보상 규정 확인하기</a>
-
-            </div>
-        </section>
-
-        <section id="faq">
-            <div class="container">
-                <h2>자주 묻는 질문 (FAQ) - **테슬라 보험료**</h2>
-                <dl>
-                    <dt tabindex="0" aria-expanded="false">**Q1. 테슬라 다이렉트 보험은 왜 설계사 보험보다 저렴한가요?**</dt>
-                    <dd>다이렉트 보험은 보험 설계사에게 지급되는 사업비(수수료)가 절감되어, 이 금액만큼 보험료가 저렴해집니다. 일반적으로 설계사 보험 대비 15% 내외의 할인 효과가 있으며, **테슬라 보험료**와 같이 고가인 경우 절감액이 상당합니다. 다만, 사고 발생 시 직접 처리해야 하는 경우가 있어 보험 지식이 필요합니다.</dd>
-
-                    <dt tabindex="0" aria-expanded="false">**Q2. 만 26세 미만 운전자는 보험료를 얼마나 절약할 수 있나요?**</dt>
-                    <dd>**만 26세**를 기점으로 보험료가 큰 폭으로 인하됩니다. 만 26세 미만 운전자는 고위험군으로 분류되어 높은 할증이 붙으나, 만 26세가 되는 시점에 맞춰 보험 기간을 설정하거나, 운전자 한정 특약을 '만 26세 이상'으로 설정하면 보험료를 크게 절약할 수 있습니다. 예를 들어, **만 20세 모델 Y 보험료**가 350만원이라면, 만 26세가 되면 200만원 이하로 떨어질 수 있습니다.</dd>
-
-                    <dt tabindex="0" aria-expanded="false">**Q3. 테슬라 차량의 긴 수리 기간 동안 렌터카 비용은 보상되나요?**</dt>
-                    <dd>네, 대차료(렌터카 비용 또는 휴차료) 특약에 가입되어 있다면 보상됩니다. 그러나 테슬라의 경우 수리 기간이 길어 렌터카 업체에서도 동급의 전기차를 구하기 어렵거나 비용이 비쌀 수 있습니다. 일부 보험사는 동급 렌터카 대신 운행 불가 기간 동안의 교통비(휴차료)를 현금으로 지급하는 옵션을 제공하니, 가입 시 특약 내용을 꼼꼼히 확인해야 합니다.</dd>
-                    <a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=230635&efYd=20200805#0000" target="_blank" rel="noopener noreferrer" class="external-link">법제처 - 자동차보험 표준약관 확인 (휴차료/대차료 관련)</a>
-
-                    <dt tabindex="0" aria-expanded="false">**Q4. 테슬라 보험료 갱신 시 주의할 점은 무엇인가요?**</dt>
-                    <dd>갱신 시점에는 반드시 다른 보험사의 **테슬라 보험료**를 비교해야 합니다. 보험사별로 전년도 손해율 및 차종 등급 조정이 이루어지기 때문에, 기존 보험사와의 재계약이 반드시 최저가라는 보장이 없습니다. 또한, 차량 가액이 감가상각되어 **자차 보험료**가 줄어드는지, 새로운 할인 특약(예: UBI)이 적용되었는지 확인해야 합니다.</dd>
-                </dl>
-            </div>
-        </section>
-        
-        <section id="예약문의">
-            <div class="container" style="text-align: center;">
-                <h2>**테슬라 보험료** 비교하고 지금 바로 절약하세요!</h2>
-                <p>가장 합리적인 **테슬라 보험료**를 찾고 싶다면, 모든 보험사의 견적을 비교하는 것이 유일한 방법입니다. 지금 바로 무료 견적을 신청하시고, **2026년 최저가 전기차 보험**을 경험하세요.</p>
-                <a href="#비교견적" class="cta-button" aria-label="테슬라 보험료 무료 견적 받기">**테슬라 보험료** 최저가 견적 무료 신청</a>
-            </div>
-        </section>
-        
-        <div class="container">
-            <p style="font-size: 0.9em; color: #555; text-align: center; padding-top: 20px;">
-                **[주의]** 본 웹사이트에 제시된 정보 및 견적은 이해를 돕기 위한 예시 자료이며, 실제 **테슬라 보험료**는 개인의 운전 경력, 무사고 할인, 보험사 요율, 차량 연식 등 수십 가지 요인에 의해 달라집니다. 최종 계약 전 반드시 해당 보험사의 약관 및 견적 내용을 상세히 확인하시기 바랍니다.
-            </p>
         </div>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 **테슬라 보험료** 다이렉트 비교 센터. 모든 권리 보유.</p>
-        </div>
-    </footer>
+        <p>최근 도입된 D.I.A. 로직에 따르면 사용자들은 단순 가격 정보보다 실질적인 보상 범위와 특약의 실효성을 중시합니다. 테슬라 사용자들 사이에서 필수적으로 거론되는 긴급출동 견인 거리 확대 특약과 배터리 전손 시 가액 전액 보상 특약은 보험료를 결정짓는 핵심 변수입니다.</p>
+    </section>
 
-    <script>
-        // FAQ 아코디언 기능 (접기/펼치기) - 사용자 체류 시간 증대 요소
-        document.querySelectorAll('dl dt').forEach((dt) => {
-            dt.addEventListener('click', () => {
-                const expanded = dt.getAttribute('aria-expanded') === 'true' || false;
-                
-                // 다른 항목 닫기
-                document.querySelectorAll('dl dt.active').forEach(activeDt => {
-                    if (activeDt !== dt) {
-                        activeDt.classList.remove('active');
-                        activeDt.setAttribute('aria-expanded', 'false');
-                    }
-                });
+    <section id="comparison">
+        <h2>2026 테슬라 주요 모델별 예상 보험료 비교</h2>
+        <p>다음 데이터는 30대 중반, 무사고 5년 경력, 1인 한정 가입자를 기준으로 산출된 평균 데이터입니다. 실제 개인의 요율에 따라 30퍼센트 이상의 차이가 발생할 수 있습니다.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>세부 모델</th>
+                    <th>연간 예상 보험료 (평균)</th>
+                    <th>자차 비중</th>
+                    <th>추천 특약</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>모델3 하이랜드 (RWD)</strong></td>
+                    <td>1,250,000원</td>
+                    <td>58%</td>
+                    <td>배터리 교체비용 전액 보상</td>
+                </tr>
+                <tr>
+                    <td><strong>모델Y (Long Range)</strong></td>
+                    <td>1,480,000원</td>
+                    <td>62%</td>
+                    <td>긴급출동 100km 확대</td>
+                </tr>
+                <tr>
+                    <td><strong>모델S (Plaid)</strong></td>
+                    <td>2,800,000원</td>
+                    <td>75%</td>
+                    <td>초과수리비 지원 특약</td>
+                </tr>
+                <tr>
+                    <td><strong>모델X (Long Range)</strong></td>
+                    <td>2,450,000원</td>
+                    <td>72%</td>
+                    <td>법률비용 지원 서비스</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>테슬라 모델Y 보험료의 경우 국내 판매량이 급증함에 따라 보험사별 손해율 산정이 안정화 단계에 접어들었습니다. 하지만 여전히 외제차 등급 분리에 따라 국산 전기차 대비 1.5배 이상의 보험료가 책정되는 것이 일반적입니다.</p>
+    </section>
 
-                // 현재 항목 토글
-                dt.setAttribute('aria-expanded', !expanded);
-                dt.classList.toggle('active');
-            });
+    <section id="factors">
+        <h2>보험료 할증 및 할인 결정 요인</h2>
+        <p>테슬라 보험료를 결정하는 요소는 단순히 차 가격만이 아닙니다. 2026년 기준 보험사들이 가장 중점적으로 보는 항목은 다음과 같습니다.</p>
+        
+        <h3>1. 소프트웨어 및 FSD 포함 여부</h3>
+        <p>풀 셀프 드라이빙(FSD) 옵션을 차량 가액에 포함할 경우 자차 보험료가 상승합니다. 사고 시 해당 소프트웨어 권한에 대한 보상 여부를 명확히 설정해야 합니다.</p>
 
-            dt.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    dt.click();
-                }
+        <h3>2. 배터리 손상 시 보상 한도</h3>
+        <p>전기차의 핵심인 배터리는 가벼운 하부 충격에도 전손 처리가 될 가능성이 높습니다. 신차 가액 보상 특약을 넣지 않을 경우, 감가상각된 금액만 보상받아 새 배터리 교체 시 거액의 자부담이 발생할 수 있습니다.</p>
+
+        <h3>3. 주행거리 및 안전운전 점수</h3>
+        <p>테슬라 소유자들은 대개 주행거리가 많은 편입니다. 마일리지 할인 특약을 활용하되, Tmap이나 커넥티드카 데이터를 활용한 안전운전 점수 할인을 중복 적용하는 것이 가장 경제적입니다.</p>
+    </section>
+
+    <section id="calculator" class="calculator-area">
+        <h2>맞춤형 테슬라 보험료 견적 요청</h2>
+        <p>정확한 데이터 분석을 위해 아래 정보를 입력해 주세요. 입력하신 정보는 체류 시간 동안의 가상 시뮬레이션에 활용됩니다.</p>
+        
+        <form id="insuranceForm">
+            <div class="input-group">
+                <label for="carModel">보유 또는 예정 모델</label>
+                <select id="carModel">
+                    <option value="m3">모델3 (Model 3)</option>
+                    <option value="my">모델Y (Model Y)</option>
+                    <option value="ms">모델S (Model S)</option>
+                    <option value="mx">모델X (Model X)</option>
+                    <option value="cy">사이버트럭 (Cybertruck)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="age">연령대 선택</label>
+                <select id="age">
+                    <option value="20">만 26세 미만</option>
+                    <option value="30">만 26세 ~ 35세</option>
+                    <option value="40">만 35세 ~ 49세</option>
+                    <option value="50">만 50세 이상</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="mileage">연간 예상 주행거리 (km)</label>
+                <input type="number" id="mileage" placeholder="예: 15000">
+            </div>
+
+            <div class="input-group">
+                <label for="message">추가 문의사항 (보장 범위 등)</label>
+                <textarea id="message" rows="4" placeholder="특정 보험사 선호나 중점적으로 보장받고 싶은 내용을 적어주세요."></textarea>
+            </div>
+
+            <button type="button" class="cta-button" onclick="alert('데이터 분석 중입니다. 잠시만 기다려주세요.')">실시간 최저가 조회하기</button>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <dl class="faq-list">
+            <dt>테슬라 전용 보험이 따로 있나요?</dt>
+            <dd>일부 대형 보험사에서 전기차 전용 특약을 제공합니다. 이는 견인 거리 확대, 배터리 전손 보상, 충전 중 사고 보상 등을 포함하며 테슬라 유저에게 매우 유리합니다.</dd>
+
+            <dt>FSD 옵션도 보험 처리가 되나요?</dt>
+            <dd>가입 시 차량 가액에 FSD 가격을 합산하여 고지해야 합니다. 고지하지 않을 경우 사고 시 소프트웨어 비용에 대한 보상을 받을 수 없습니다.</dd>
+
+            <dt>보험료를 낮추는 가장 좋은 방법은?</dt>
+            <dd>블랙박스, 차선이탈 방지, 전방추돌 방지 장치 할인을 확인하고, 커넥티드카 할인(테슬라 앱 연동)이 가능한 보험사를 찾는 것이 좋습니다.</dd>
+        </dl>
+    </section>
+
+    <div class="external-links">
+        <p>더 상세한 정보는 아래 공인된 신뢰성 있는 사이트에서 확인하실 수 있습니다.</p>
+        <a href="https://www.kidi.or.kr/" target="_blank">보험개발원 자동차보험료 산정기준</a> |
+        <a href="https://www.insure.or.kr/" target="_blank">손해보험협회 공시실</a> |
+        <a href="https://namu.wiki/w/%ED%85%8C%EC%8A%AC%EB%9D%BC(%EA%B8%B0%EC%97%85)" target="_blank">나무위키 테슬라 기업 정보</a> |
+        <a href="https://www.kca.go.kr/" target="_blank">한국소비자원 전기차 보험 실태조사</a> |
+        <a href="https://www.gov.kr/" target="_blank">정부24 자동차 보험 정보</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 테슬라 보험료 전문 정보 센터. All Rights Reserved.</p>
+    <p>본 사이트에서 제공하는 정보는 참고용이며, 정확한 보험료는 해당 보험사 상담을 통해 확인하시기 바랍니다.</p>
+</footer>
+
+<script>
+    // FAQ 아코디언 기능
+    document.querySelectorAll('.faq-list dt').forEach(dt => {
+        dt.addEventListener('click', () => {
+            const dd = dt.nextElementSibling;
+            const isOpen = dd.style.display === 'block';
+            
+            // 모든 답변 닫기
+            document.querySelectorAll('.faq-list dd').forEach(item => item.style.display = 'none');
+            
+            if (!isOpen) {
+                dd.style.display = 'block';
+            }
+        });
+    });
+
+    // 페이지 내 이동 애니메이션
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
-    </script>
+    });
+</script>
 
-
-
-
-
-<script id="InitialColorMode">(function(){async function setInitialColorMode() {
-    function getCookies() {
-        const cookieString = document.cookie;
-        const cookies = {};
-        if (cookieString) {
-            const cookieArray = cookieString.split(";");
-            cookieArray.forEach((cookie)=>{
-                const [key, value] = cookie.trim().split("=");
-                cookies[key] = decodeURIComponent(value);
-            });
-        }
-        return cookies;
-    }
-    function getClassName(pathname) {
-        if (pathname.startsWith("/chart/") || pathname.startsWith("/embed/") || pathname.startsWith("/l/") && pathname.endsWith("/sharePlayer") || pathname.startsWith("/rp")) {
-            return "";
-        }
-        if (pathname.startsWith("/h")) {
-            return "highlight_end_page";
-        }
-        if (pathname.startsWith("/l/") || pathname.startsWith("/v/") || pathname.startsWith("/watch/")) {
-            return "player_end_page";
-        }
-        return "page";
-    }
-    // className 초기 설정
-    const defaultClassName = getClassName(document.location.pathname);
-    document.body.className = defaultClassName;
-    const prefersDarkSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const cookies = getCookies();
-    const NSCS = parseInt(cookies?.["NSCS"] || 0);
-    const NTVSCS = cookies?.["NTVSCS"];
-    let initialColorMode = false;
-    // NSCS는 undefined와 0일때의 라이트/다크모드의 결과값이 동일
-    if (NSCS) {
-        initialColorMode = NSCS === 1 ? prefersDarkSchemeQuery.matches : true;
-    }
-    // NTVSCS는 undefined와 0일때의 라이트/다크모드의 결과값이 다름
-    if (NTVSCS) {
-        initialColorMode = NTVSCS === "0" ? false : NTVSCS === "1" ? prefersDarkSchemeQuery.matches : true;
-    }
-    document.getElementsByTagName("html")[0].setAttribute("data-dark", initialColorMode ? "true" : "false");
-}setInitialColorMode();})()</script><div id="__next" data-reactroot=""><div role="dialog" aria-modal="true"></div><div role="dialog" aria-live="polite"></div><div id="root" class="wrap"><div id="u_skip"><a href="#content"><span>본문으로 바로가기</span></a></div><header class="Header_header__JAW_Z Header_channel_header__4mguP Header_without_background__UAAeK"><div class="Header_left_wrap__aVIXl"><h1 class="Header_logo_area__dpgTc"><a class="Header_link_navertv__TqTR3" href="/"><svg viewBox="0 0 117 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="117" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.425.5-5.864 14.95h4.958l.712-1.993h5.661l.715 1.992h4.955L27.702.5h-5.277Zm2.637 4.799 1.671 4.67H23.39l1.672-4.67ZM49.58.5v14.95h11.709v-3.737h-6.975V9.718h6.727V6.232h-6.727V4.237h6.975V.5H49.58ZM43.013.5l-3.516 9.83L35.98.5h-4.985l5.864 14.95h5.276L47.998.5h-4.985ZM10.215.5v8.002L4.764.5H0v14.95h4.734V7.447l5.451 8.001h4.764V.5h-4.734ZM70.904 7.477h-2.637V4.242h2.624a1.618 1.618 0 0 1 .013 3.235Zm3.316 2.844.453-.188c1.736-.728 2.62-2.303 2.62-4.298 0-1.887-.687-3.286-2.046-4.154C73.983.872 72.347.5 70.093.5h-6.309v14.95h4.731v-4.236h1.704l2.882 4.235H78l-3.78-5.128ZM111.367.5l-3.514 9.824L104.337.5h-4.982l5.86 14.94h5.273L116.349.5h-4.982ZM88.58.5H84v4.311h4.58V15.5h4.85V4.811h4.581V.5h-9.43Z" fill="currentColor"></path></svg><span class="blind">NAVER TV</span></a></h1><button type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="wa_header_menu" class="Header_button_menu__8f3_9"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" fill="currentColor"></path></svg><span class="blind">메뉴</span></button></div><div aria-labelledby="wa_header_menu" class="Header_layer_menu__8wMgP "><div class="Header_layer_content__u6ydj"><div id="headerScrollWrap" class="Header_scroll_wrap__tOk4E"><nav class="Header_menu_wrap__J2HC0"><ul role="menu" class="Header_main_menu_list__hat5m"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path clip-rule="evenodd" d="M2 8.725a3 3 0 0 1 1.354-2.508L9.903 1.92a2 2 0 0 1 2.194 0l6.549 4.297A3 3 0 0 1 20 8.725V17.2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8.725Z" stroke="currentColor" stroke-width="1.5"></path><path d="M11 15.2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">홈</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/l"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M6.827 5.771c-1.043.951-1.687 2.253-1.687 3.69 0 1.436.644 2.738 1.687 3.688m8.43-7.378c1.044.951 1.688 2.253 1.688 3.69 0 1.436-.644 2.738-1.688 3.688M4.073 3C2.358 4.607 1.3 6.808 1.3 9.236s1.058 4.629 2.773 6.235M17.927 3C19.642 4.607 20.7 6.808 20.7 9.236s-1.058 4.629-2.773 6.235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10.999" cy="9.236" r="2.021" stroke="currentColor" stroke-width="1.5"></circle><path d="M11.042 11.585v8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">생중계</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/h"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M15.6 10.5L10.2225 6.93922C9.42479 6.41101 8.35999 6.98302 8.35999 7.93976V11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2 19.9999C14.711 19.9999 17.7536 17.6591 19.3177 14.7352C19.7523 13.9227 19.4049 12.9474 18.6316 12.4463L16.4 11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2512 20C10.9414 20 10.635 19.9852 10.333 19.9562C5.65473 19.5078 2 15.6691 2 11C2 6.02944 6.14192 2 11.2512 2C14.7643 2 17.8084 4.32867 19.3717 7.25078C19.8048 8.06052 19.4606 9.03272 18.6921 9.53538L10.2153 15.0796C9.41717 15.6017 8.35844 15.029 8.35844 14.0754V11.5V11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><defs><linearGradient id="0000000" x1="13.5" y1="8.5" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient><linearGradient id="0000000" x1="18.5" y1="14" x2="16.5" y2="11" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="Header_text__LA4HP">클립</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/f"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><rect x="2" y="5.5" width="18" height="14" rx="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M13.326 11.75 10.29 9.727a.7.7 0 0 0-1.089.582v4.05a.7.7 0 0 0 1.089.583l3.037-2.025a.7.7 0 0 0 0-1.165ZM4.5 2.35a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z" fill="currentColor"></path></svg></span><span class="Header_text__LA4HP">구독</span></a></li></ul><span class="Header_menu_title__pFzEd">My</span><ul role="menu" class="Header_library_menu_list__cAA3v"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/my?tab=recentt"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11 2a9 9 0 1 0 8.37 12.316" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 2a9 9 0 0 1 9 9c0 .667-.3 2.3-.7 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 3"></path><path d="M10.5 6.5v5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">최근<span class="Header_hidden_reduced__y3kxs"> 본 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/my?tab=liked"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M9.52 4.357A4.626 4.626 0 0 0 6.86 3.5a4.81 4.81 0 0 0-3.45 1.46C2.537 5.854 1.984 6.863 2 8.648c.016 1.745.843 3.002 2.559 4.718a109.862 109.862 0 0 0 5.81 5.074.99.99 0 0 0 1.247 0c2.004-1.618 4.258-3.522 5.81-5.074C19.143 11.65 20 10.467 20 8.647c0-1.386-.555-2.812-1.477-3.713-.903-.884-2.16-1.432-3.614-1.429a4.661 4.661 0 0 0-2.536.918 5.946 5.946 0 0 0-1.397 1.487A5.253 5.253 0 0 0 9.52 4.357Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">좋아요<span class="Header_hidden_reduced__y3kxs"> 한 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/my?tab=saved"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.262 18.552 11 13.512l5.72 5.005c.088.072.2.113.316.114a.44.44 0 0 0 .185 0 .448.448 0 0 0 .279-.404V7.773M5.262 18.553a.496.496 0 0 1-.502.078.446.446 0 0 1-.26-.404V3.94c0-.242.208-.439.464-.439h12.072c.123 0 .24.046.328.129a.428.428 0 0 1 .136.31v3.834M5.262 18.553 17.5 7.772" stroke="currentColor" stroke-width="1.4"></path></svg></span><span class="Header_text__LA4HP">나중에<span class="Header_hidden_reduced__y3kxs"> 볼 영상</span></span></a></li></ul><span class="Header_menu_title__pFzEd">탐색</span><ul role="menu" class="Header_genre_menu_list__NbKFm"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/r"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11.133 14.938v1.837" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20.068h6.318a.5.5 0 0 0 .5-.5v-.454c0-1.05-.688-1.91-1.527-1.91H8.709c-.84 0-1.528.86-1.528 1.91v.454a.5.5 0 0 0 .5.5H8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M11.001 14.5a6.12 6.12 0 0 1-6.125-6.126V5.75c0-1.933 1.566-3.5 3.5-3.5h5.25a3.5 3.5 0 0 1 3.5 3.5v2.625a6.12 6.12 0 0 1-6.125 6.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.318 11A5.687 5.687 0 0 1 3.17 9.902C2.168 8.986 1.5 7.888 1.5 6.607c0-1.282 1.224-2.289 2.783-2.289h.723a2.919 2.919 0 0 0-.333 1.373v2.746c0 .916.233 1.776.645 2.563ZM16.727 11a5.688 5.688 0 0 0 2.149-1.098c1.002-.915 1.67-2.014 1.67-3.295 0-1.282-1.225-2.288-2.783-2.288h-.724c.223.42.334.887.334 1.373v2.746c0 .915-.234 1.775-.646 2.562Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">TOP100</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/i"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.708 5.652h3.444m0 0v3.444m0-3.444-6.59 6.59-3.153-3.151L3 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.667 3.667v13.166c0 1.384 1.117 2.5 2.5 2.5h13.167" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">급상승</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/ct/news"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M16.83 13.875V5.781m0 0V5.5a3 3 0 0 0-3-3H5.5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11.4a3 3 0 0 0 3-3V7.781a2 2 0 0 0-2-2h-1.07Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6.8h7M6 10h7M6 13.2h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">뉴스</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/ct/sport"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M9.54 2c.5 3.5-2.5 9-7.5 9.5M12.094 20.498c-.4-3.513 2.756-8.925 7.768-9.282" stroke="currentColor" stroke-width="1.3"></path></svg></span><span class="Header_text__LA4HP">스포츠</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/ct/drama"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.8 20.5h8M16.8 6v6h1a3 3 0 1 0 0-6h-1ZM16.8 6h-13a1 1 0 0 0-1 1v4a7 7 0 1 0 14 0V6ZM14 1l-1 1.8M10.3 1l-1 1.8M6.5 1l-1 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">드라마</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/ct/enter"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M15.5 11.5a4.5 4.5 0 1 1-9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">예능</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="https://tv.naver.com/ct/other"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.246 6.672 9.424 8.787c-.223.102-.49.368-.591.591L6.668 14.25c-.462 1.01.072 1.544 1.082 1.082l4.872-2.165c.222-.101.488-.368.59-.59l2.116-4.822c.462-1.043-.074-1.544-1.082-1.083Zm-2.4 5.18a1.2 1.2 0 1 1-1.697-1.696 1.2 1.2 0 0 1 1.697 1.696Z" fill="currentColor"></path><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="Header_text__LA4HP">더 많은 영상</span></a></li></ul><span class="Header_menu_title__pFzEd">방송관</span><ul role="menu" class="Header_brand_menu_list__gdj5a"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/tvchosun"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand tvchosun"><path d="M11.669 5.9H3.346C2.603 5.9 2 6.472 2 7.177v7.893c0 .705.603 1.277 1.346 1.277h8.323c.744 0 1.346-.572 1.346-1.277V7.177c0-.705-.602-1.277-1.346-1.277Z" fill="url(#icon_tvlogo_tvchosun_h22_svg__a)"></path><path d="M3.34 11.593c-.57 1.968.98 3.593 3.451 3.593 2.473 0 4.994-1.579 5.612-3.546h-2.215l-.257.336c-.14.198-.318.378-.514.528a5.036 5.036 0 0 1-3.14 1.248c-1.854.047-3.035-1.102-2.625-2.588.129-.453.373-.865.722-1.196A4.589 4.589 0 0 0 3.346 11.6" fill="#fff"></path><path d="m4.943 9.3-.269.291a2.69 2.69 0 0 0-.753 1.219c-.428 1.509.808 2.681 2.748 2.635 1.23-.047 2.399-.5 3.286-1.265a3.695 3.695 0 0 1-2.423.928c-1.456 0-2.264-.928-1.885-2.095.453-1.074 1.5-1.851 2.748-2.049l.428-1.317a7.204 7.204 0 0 0-3.88 1.66" fill="url(#icon_tvlogo_tvchosun_h22_svg__b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="#575756"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="currentColor"></path><defs><linearGradient id="icon_tvlogo_tvchosun_h22_svg__a" x1="7.471" y1="5.993" x2="7.471" y2="16.335" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#EC1C24"></stop><stop offset="0.75" stop-color="#AE1E23"></stop></linearGradient><linearGradient id="icon_tvlogo_tvchosun_h22_svg__b" x1="6.896" y1="7.699" x2="6.896" y2="13.445" gradientUnits="userSpaceOnUse"><stop offset="0.5" stop-color="#fff"></stop><stop offset="1" stop-color="#A36E5D"></stop></linearGradient></defs></svg><span class="blind">TV 조선</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/mbn"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbn"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.172 7.38-2.099 2.256L9.937 7.38A1.202 1.202 0 0 0 9.061 7H7v8.15h2.328V9.91l2.558 2.716c.043.049.107.08.171.08a.217.217 0 0 0 .17-.08l2.596-2.716v5.24h2.328V7h-2.098a1.254 1.254 0 0 0-.876.38h-.005Zm13.771 1.844a2.079 2.079 0 0 1-.948 1.715 2.262 2.262 0 0 1 1.37 2.03c0 1.185-1.068 2.144-2.44 2.181h-7.401V7.043h6.942c1.297.075 2.477 1.034 2.477 2.18Zm-7.096-.311h4.042a.73.73 0 0 1 .726.648.682.682 0 0 1-.726.611h-4.042V8.913Zm4.464 4.324h-4.464v-1.264h4.464a.677.677 0 0 1 .496.177.711.711 0 0 1 .23.476.655.655 0 0 1-.726.617v-.006ZM36.6 7h2.365v8.15h-1.831a1.232 1.232 0 0 1-.876-.38l-4.694-4.978v5.358h-2.328V7h2.173c.331.005.646.145.881.38l4.31 4.598V7Z" fill="#EB6608"></path></svg><span class="blind">MBN</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/channela"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand channela"><g clip-path="url(#icon_tvlogo_channelA_h22_svg__a)"><path d="M35.155 14.29c.548 0 1.15-.32 1.431-.641l-.709-1.03c-.107.12-.307.267-.414.24-.107-.026-.12-.12-.12-.28V7.403h-1.391v5.47c0 .989.535 1.417 1.203 1.417ZM32.788 12.097s-.588.87-1.711.87c-.481 0-.963-.389-1.057-.71l3.437-1.002c0-1.137-.789-2.26-2.394-2.26a2.57 2.57 0 0 0-2.567 2.62c0 1.592 1.243 2.675 2.58 2.675 1.07 0 2.02-.615 2.394-1.177l-.682-1.016Zm-1.724-1.872c.387-.04.815.067.869.348.067.36-1.31.896-1.819 1.11l-.24.094c-.16-1.03.615-1.485 1.19-1.551ZM23.227 14.09h1.418v-2.233c0-.856.267-1.78 1.03-1.78.762 0 1.002.603 1.002 1.512v2.5h1.404v-2.955c0-1.296-.642-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.053.054-.027 0-.04-.013-.04-.04v-.923h-1.418v4.895ZM17.705 14.09h1.417v-2.233c0-.856.268-1.78 1.017-1.78.749 0 1.016.603 1.016 1.512v2.5h1.404v-2.955c0-1.296-.655-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.054.054-.026 0-.04-.013-.04-.04v-.923h-1.417v4.895ZM15.659 9.195v.923c0 .027-.027.04-.054.04-.013 0-.04 0-.053-.04-.16-.428-.602-1.123-1.511-1.123-1.404 0-2.02 1.43-2.02 2.62 0 1.19.616 2.675 2.02 2.675.91 0 1.35-.682 1.51-1.123.014-.04.028-.054.054-.054.04 0 .054.027.054.054v.923h1.377V9.195h-1.377Zm-1.11 3.999c-.696 0-1.137-.549-1.137-1.578 0-.976.442-1.538 1.137-1.538.588 0 1.03.562 1.03 1.538 0 1.03-.442 1.578-1.03 1.578ZM6.713 14.09H8.09v-2.233c0-.856.308-1.78 1.043-1.78.735 0 1.016.603 1.016 1.512v2.5h1.418v-2.955c0-1.296-.655-2.14-1.805-2.14-.976 0-1.39.67-1.538 1.097-.013.04-.027.067-.067.067-.053 0-.067-.04-.067-.08V7.404H6.713v6.686ZM3.236 14.29c1.993 0 3.009-1.685 3.009-2.862H4.814c0 .75-.696 1.551-1.578 1.551-.936 0-1.792-.882-1.792-2.246 0-1.364.882-2.3 1.792-2.3s1.404.655 1.55 1.805l1.391-.816c-.227-.829-.949-2.22-2.941-2.22C1.243 7.202 0 8.834 0 10.733c0 1.9 1.23 3.557 3.236 3.557Z" fill="currentColor"></path><path d="M42.002 6.001c-.535 0-.856.428-1.017.776l-2.717 5.669c-.388.802.121 1.845 1.044 1.845.549 0 .937-.307 1.299-.628l.365-.316v-1.614l-.5.298c-.106.067-.227.147-.294.094-.067-.04-.04-.134.014-.294l1.579-4.333c.067-.187.134-.294.227-.294.023 0 .046.003.066.013V6.004A1.072 1.072 0 0 0 42.002 6Z" fill="url(#icon_tvlogo_channelA_h22_svg__b)"></path><path d="m45.897 12.78-2.864-6.004c-.174-.348-.509-.776-1.03-.776a.949.949 0 0 0-.153.012v1.313c.045-.079.093-.122.152-.122.08 0 .148.04.201.241l1.7 6.004c.227.816.964.976 1.485.748.563-.254.75-.909.509-1.417Z" fill="url(#icon_tvlogo_channelA_h22_svg__c)"></path><path d="M45.723 9.062c-.053-.067-.174-.067-.32.027l-4.645 2.774v1.672l4.885-4.218c.107-.094.134-.188.08-.255Z" fill="url(#icon_tvlogo_channelA_h22_svg__d)"></path></g><defs><linearGradient id="icon_tvlogo_channelA_h22_svg__b" x1="38.898" y1="14.687" x2="42.901" y2="4.777" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__c" x1="42.205" y1="6.454" x2="45.44" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#196EFF"></stop><stop offset="0.23" stop-color="#186AF9"></stop><stop offset="0.41" stop-color="#1661E8"></stop><stop offset="0.6" stop-color="#1352CD"></stop><stop offset="0.82" stop-color="#0E3DA8"></stop><stop offset="1" stop-color="#0A2882"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__d" x1="41.342" y1="13.831" x2="44.951" y2="7.581" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.39" stop-color="#6BC4FF"></stop><stop offset="0.57" stop-color="#3E94FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><clipPath id="icon_tvlogo_channelA_h22_svg__a"><path fill="#fff" transform="translate(0 6)" d="M0 0h46v8.291H0z"></path></clipPath></defs></svg><span class="blind">CHANNEL A</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/jtbc"><span class="icon_jtbc_w46h22"></span><span class="blind">JTBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/cjenm"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand cjenm"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.881 8.167c-2.294-.863-4.614-.774-5.202.239-.594 1.02.272 3.437 1.904 5.44 1.632 2.004 3.94 1.939 5.212-.25 1.253-2.183.378-4.57-1.91-5.432" fill="#FF9700"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 8.865c2.038 1.33 4.318 1.732 5.127.87.817-.87.535-3.408-.59-5.707-1.126-2.3-3.39-2.724-5.14-.86-1.73 1.863-1.43 4.374.6 5.697" fill="#006ECD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 15.862c-.325-2.335-1.538-4.225-2.75-4.225-1.223 0-3.012 1.896-4.053 4.234-1.038 2.338.144 4.229 2.764 4.229 2.608-.018 4.365-1.908 4.04-4.238Z" fill="#EF151E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.783 15.065c1.538 0 2.329-1.084 2.329-1.084s-.341-.41-.797-.41c-.216 0-.366.087-.523.18-.222.128-.475.275-1.01.275a1.64 1.64 0 0 1-1.635-1.66c0-.932.735-1.694 1.636-1.694.47 0 .73.153.957.286l.006.004c.168.101.318.188.515.188.407 0 .829-.433.829-.433s-.72-1.084-2.307-1.084C4.194 9.633 3 10.83 3 12.368c0 1.538 1.244 2.697 2.783 2.697Zm2.732-4.668c0-.364.278-.609.694-.609h2.273v.367c0 .35-.3.607-.719.61v2.765c0 .663-.094 1.096-.322 1.5-.422.74-1.257 1.041-2.042 1.223-.2.048-.25.015-.206-.247l.005-.03c.032-.195.067-.412.567-.64.61-.277.697-.809.735-1.134.038-.329.003-3.437.003-3.437h-.988v-.368ZM30.448 10.747c.281 0 .519-.227.519-.496v-.463h-3.661c-.282 0-.52.236-.52.496v4.623h3.662c.281 0 .519-.293.519-.561v-.404H28.43c-.419 0-.49.197-.49.197v-1.337h2.385c.281 0 .519-.227.519-.496v-.469h-2.417c-.419 0-.49.197-.49.197v-1.287H30.447Zm12.059-.959v4.602c0 .335-.266.514-.635.514h-.488v-3.118l-.894 2.793c-.078.223-.366.325-.657.328h-.225l-1.103-3.12v2.597c0 .34-.26.52-.635.52h-.49v-4.596c0-.34.259-.52.634-.52h.803l1.16 3.393 1.048-3.07c.08-.212.3-.323.597-.323h.885Zm-7.198.496c0-.245.154-.496.413-.496h.713v4.623c0 .26-.222.496-.482.496h-.337l-2.67-3.428v2.932c0 .254-.222.496-.482.496h-.644v-4.623c0-.26.222-.496.482-.496h.494l2.513 3.166v-2.67Z" fill="currentColor"></path></svg><span class="blind">CJ ENM</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/kbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand kbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="#1D1160"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="currentColor"></path></svg><span class="blind">KBS</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/mbc"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbc"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">MBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="https://tv.naver.com/b/sbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand sbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">SBS</span></a></li></ul></nav><div class="Header_mode_wrap__CnQLB"><button class="Header_button_mode__K7u1M"><span class="Header_icon_applied__dY7x7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><g clip-path="url(#icon_light_mode_svg__a)" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="4.25"></circle><path d="M11 1.5V4M11 18v2.5M4.937 4.92l.707.708M16 16.5l.707.707M17 5.707 17.707 5M4.942 17.08l.707-.708M18 11h2.5M1.5 11H4" stroke-linecap="round"></path></g><defs><clipPath id="icon_light_mode_svg__a"><path fill="#fff" d="M0 0h22v22H0z"></path></clipPath></defs></svg></span><span class="Header_icon_next__L5wXj"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><path d="M18.61 12.475a7.75 7.75 0 1 1-9.124-9.078C8.676 4.806 8.317 6.2 8.344 7.5c.035 1.72.748 3.224 1.893 4.297 2.012 1.886 5.253 2.377 8.373.678Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><span class="blind">다크 모드로 변경</span></button><span class="Header_tooltip_hover__rNAYS"><span class="Header_icon_triangle__DSsEC"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_light__EoVJq"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#F8F8F8"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#E7E7E7"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_dark__KyHWb"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#343436"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#343436"></path></svg></span><span class="Header_tooltip_text__pbCxh">다크<span class="Header_only_wide__t0IuF"> 모드</span></span></span></div><a href="https://creator.tv.naver.com" class="Header_link_studio_menu__KefUn"><svg viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="90" height="17"><path d="M.513 8.545c-.018-1.278.446-2.372 1.39-3.28C2.85 4.346 3.97 3.9 5.265 3.928c.846 0 1.611.198 2.295.594a4.217 4.217 0 0 1 1.634 1.62l-1.378.972c-.638-.999-1.489-1.498-2.551-1.498-.828 0-1.516.279-2.065.837-.54.558-.81 1.26-.81 2.106 0 .846.27 1.543.81 2.092.548.549 1.237.824 2.065.824 1.062 0 1.913-.5 2.551-1.499l1.378.972a4.217 4.217 0 0 1-1.62 1.633c-.694.388-1.468.581-2.322.581-1.305.027-2.43-.414-3.375-1.323C.94 10.921.486 9.823.512 8.545Zm13.912-2.228v1.607h-.486c-.558 0-1 .148-1.323.446-.315.296-.473.729-.473 1.296V13h-1.822V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm6.84 3.956h-4.684c.108.423.324.752.648.986.333.224.742.337 1.228.337.657 0 1.278-.225 1.863-.675l.756 1.242c-.8.666-1.692.999-2.673.999-1.026.018-1.899-.315-2.619-.999-.71-.693-1.057-1.526-1.04-2.498-.017-.962.32-1.79 1.013-2.483.693-.694 1.521-1.031 2.484-1.013.918 0 1.67.297 2.255.891.594.594.89 1.332.89 2.214 0 .324-.04.657-.12.999Zm-4.684-1.282h3.037c-.009-.405-.153-.73-.432-.973-.27-.252-.607-.378-1.012-.378-.387 0-.725.122-1.013.365-.288.243-.481.571-.58.986Zm11.53.04V13h-1.674v-.648c-.522.54-1.201.81-2.038.81-.702 0-1.265-.185-1.688-.554-.414-.369-.62-.85-.62-1.444 0-.603.224-1.075.674-1.418.46-.35 1.076-.526 1.85-.526h1.674v-.297c0-.378-.108-.666-.324-.864-.207-.207-.513-.31-.918-.31-.333 0-.635.072-.905.216-.27.143-.558.377-.864.701l-.945-1.12c.774-.918 1.746-1.377 2.916-1.377.882 0 1.58.252 2.093.756.513.495.77 1.197.77 2.106Zm-1.822 1.471v-.08h-1.431c-.621 0-.932.224-.932.675 0 .225.086.405.257.54.18.125.414.188.702.188.405 0 .738-.121.999-.364.27-.252.405-.572.405-.959Zm7.57.973V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.517-.212-1.985-.635-.459-.422-.688-1.048-.688-1.876V7.856h-1.053V6.318h1.053V4.63h1.822v1.688h1.89v1.538h-1.89v2.633c0 .378.095.648.284.81.198.153.517.23.958.23.153 0 .441-.018.864-.054Zm.513-1.823c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Zm7.59-4.644v1.606h-.487c-.558 0-.999.148-1.323.446-.315.296-.472.729-.472 1.296V13h-1.823V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm3.813 4.873 1.256-.945c.63.864 1.359 1.296 2.187 1.296.396 0 .706-.085.931-.256a.885.885 0 0 0 .338-.73c0-.251-.077-.445-.23-.58-.153-.144-.454-.32-.904-.527l-.959-.431c-1.44-.64-2.16-1.495-2.16-2.566 0-.755.28-1.363.837-1.822.558-.468 1.265-.702 2.12-.702.666 0 1.25.153 1.755.459.504.297.9.707 1.188 1.229l-1.242.958c-.46-.684-1.026-1.026-1.701-1.026-.324 0-.59.077-.797.23a.745.745 0 0 0-.31.634c0 .225.072.41.216.553.153.136.427.293.823.473l1.013.446c.765.341 1.323.715 1.674 1.12.35.396.526.891.526 1.485 0 .801-.292 1.449-.877 1.944-.585.486-1.332.729-2.241.729a3.95 3.95 0 0 1-2.025-.527 3.9 3.9 0 0 1-1.418-1.444Zm11.968.284V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.516-.212-1.984-.635-.46-.422-.689-1.048-.689-1.876V7.856h-1.053V6.318h1.053V4.63h1.823v1.688h1.89v1.538h-1.89v2.633c0 .378.094.648.283.81.198.153.518.23.959.23.153 0 .44-.018.864-.054Zm.956-1.418v-3.74h1.822v3.889c0 .386.117.697.351.931.243.234.549.351.918.351.36 0 .657-.117.891-.351.234-.243.351-.553.351-.931V6.318h1.823v3.739c0 .918-.293 1.665-.878 2.241-.576.576-1.305.864-2.187.864-.9 0-1.642-.284-2.228-.85-.575-.576-.863-1.328-.863-2.255Zm12.458-7.182h1.823V13h-1.674v-.823c-.46.657-1.175.985-2.147.985-.936 0-1.71-.329-2.322-.986-.612-.665-.918-1.502-.918-2.51 0-1.008.306-1.841.918-2.498.612-.666 1.386-.999 2.322-.999.846 0 1.512.266 1.998.796v-4.09Zm-.459 8.14c.324-.324.486-.774.486-1.35 0-.575-.162-1.025-.486-1.35a1.61 1.61 0 0 0-1.202-.499c-.495 0-.909.171-1.242.513-.323.342-.486.783-.486 1.323 0 .549.163.995.487 1.337.323.341.737.512 1.241.512.486 0 .887-.162 1.202-.486ZM79.294 13V6.317h1.822V13h-1.823Zm-.257-9.113c0-.324.112-.594.337-.81.225-.216.5-.324.824-.324.324 0 .598.108.823.325.234.216.351.486.351.81 0 .314-.117.58-.35.796-.226.216-.5.324-.824.324-.324 0-.599-.108-.824-.324a1.06 1.06 0 0 1-.337-.796Zm3.204 5.765c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a></div></div><div class="Header_layer_dimmed__x0zGg" aria-hidden="true"></div></div><div class="_search_area Search_search_wrap__lqZZ8  "><div class="_search_dimmed Search_layer_dimmed__nYVAD" aria-hidden="true"></div><div class="Search_layer_search__srb8X"><div class="Search_input_section__m3aHz"><label class="Search_label_search__38jIt" for="__gnb__searchInput"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색창</span></label><input type="text" id="__gnb__searchInput" class="Search_input_search__Ekfhu" value="" placeholder="동영상, 채널, 라이브를 검색할 수 있어요." autoComplete="off"/><span class="Search_search_control__IFJCN"><button type="button" class="Search_button_erase__MLPAp"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.158-11.159a.8.8 0 0 1 0 1.132L11.131 10l2.027 2.027a.8.8 0 0 1-1.131 1.131L10 11.131l-2.027 2.027a.8.8 0 0 1-1.132-1.131L8.868 10 6.841 7.973A.8.8 0 1 1 7.973 6.84L10 8.868l2.027-2.027a.8.8 0 0 1 1.131 0Z" fill="currentColor"></path></svg><span class="blind">검색어 지우기</span></button><button class="Search_button_submit__vb8zX Search_disabled__0Ncc8" aria-disabled="false"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색</span></button><button type="button" class="Search_button_cancel__FK8Og">취소</button></span></div><div class="Search_keyword_section__01fmY"><div class="Search_scroll_wrap__zF_se" style="display:none"></div></div></div></div><div class="Header_right_wrap__HlL0A"><a href="https://creator.tv.naver.com" class="Header_link_studio__Z1DYf"><svg viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="72" height="14"><path d="M.415 6.398C.4 5.364.775 4.48 1.539 3.745c.764-.742 1.67-1.102 2.718-1.08.684 0 1.303.16 1.856.48.56.313 1 .75 1.32 1.31L6.32 5.24c-.516-.808-1.204-1.212-2.063-1.212-.67 0-1.226.226-1.67.677-.437.451-.655 1.019-.655 1.703 0 .684.218 1.248.655 1.692.444.444 1 .666 1.67.666.859 0 1.547-.404 2.063-1.212l1.114.786c-.313.56-.75 1-1.31 1.32-.56.314-1.186.47-1.878.47-1.055.022-1.965-.335-2.729-1.07C.76 8.32.393 7.431.415 6.398Zm11.24-1.801v1.299h-.394c-.451 0-.808.12-1.07.36-.254.24-.382.59-.382 1.048V10H8.336V4.597h1.353v.644a1.81 1.81 0 0 1 1.485-.71c.182 0 .342.022.48.066Zm5.52 3.198h-3.787c.088.342.262.608.524.797.27.182.6.273.993.273.532 0 1.034-.182 1.507-.546l.611 1.004c-.648.539-1.368.808-2.161.808-.83.014-1.536-.255-2.118-.808-.575-.56-.855-1.233-.84-2.02-.015-.778.258-1.447.818-2.008.56-.56 1.23-.833 2.009-.818.742 0 1.35.24 1.823.72.48.48.72 1.077.72 1.79 0 .262-.033.532-.098.808Zm-3.787-1.037h2.456c-.007-.327-.123-.59-.35-.786a1.153 1.153 0 0 0-.818-.306 1.23 1.23 0 0 0-.819.295c-.232.197-.389.462-.469.797Zm9.314.033V10h-1.354v-.524c-.422.437-.971.655-1.648.655-.567 0-1.022-.15-1.364-.448-.335-.298-.502-.687-.502-1.168 0-.487.182-.87.545-1.146.372-.283.87-.425 1.496-.425h1.353v-.24c0-.306-.087-.539-.262-.7-.167-.167-.414-.25-.742-.25-.27 0-.513.058-.731.174-.218.117-.451.306-.699.568l-.764-.906c.626-.742 1.412-1.113 2.358-1.113.713 0 1.277.203 1.692.61.415.401.622.969.622 1.704Zm-1.474 1.19v-.066h-1.157c-.502 0-.753.182-.753.546 0 .182.07.327.208.437.145.101.334.152.567.152.328 0 .597-.098.808-.294.218-.204.327-.462.327-.775Zm6.111.786V10c-.349.087-.687.131-1.015.131-.69 0-1.226-.171-1.604-.513-.371-.342-.557-.848-.557-1.517V5.84h-.851V4.597h.851V3.232h1.474v1.365h1.528V5.84h-1.528V7.97c0 .305.076.524.229.655.16.123.418.185.775.185.124 0 .357-.014.699-.043Zm.406-1.474c-.014-.771.266-1.437.84-1.998a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.852 1.998.014.771-.27 1.44-.852 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.059c.27-.277.404-.626.404-1.048 0-.422-.134-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.742.142-1.004.426-.262.277-.393.63-.393 1.059 0 .422.13.771.393 1.048.262.276.596.415 1.004.415.4 0 .731-.139.993-.415Zm6.127-3.755v1.299h-.392c-.452 0-.808.12-1.07.36-.255.24-.382.59-.382 1.048V10H34.44V4.597h1.354v.644a1.81 1.81 0 0 1 1.484-.71c.182 0 .342.022.48.066Zm1.818 3.94 1.015-.764c.51.699 1.099 1.048 1.768 1.048.32 0 .572-.069.753-.207a.715.715 0 0 0 .273-.59c0-.203-.062-.36-.185-.47-.124-.116-.368-.257-.732-.425l-.775-.35c-1.164-.516-1.746-1.207-1.746-2.073 0-.611.225-1.103.677-1.474.45-.378 1.022-.567 1.713-.567.539 0 1.012.123 1.42.37.407.24.727.572.96.994l-1.004.775c-.371-.553-.83-.83-1.376-.83-.262 0-.476.062-.644.186a.602.602 0 0 0-.25.513c0 .182.058.331.174.448.124.109.346.236.666.382l.819.36c.618.276 1.07.578 1.353.906.284.32.426.72.426 1.2 0 .648-.237 1.172-.71 1.573-.473.393-1.077.589-1.812.589-.604 0-1.15-.142-1.637-.426a3.153 3.153 0 0 1-1.146-1.168Zm9.667.23V10c-.35.087-.688.131-1.015.131-.692 0-1.226-.171-1.605-.513-.37-.342-.556-.848-.556-1.517V5.84h-.852V4.597h.852V3.232h1.473v1.365h1.528V5.84H47.54V7.97c0 .305.077.524.23.655.16.123.418.185.774.185.124 0 .357-.014.699-.043Zm.764-1.147V4.597h1.473V7.74c0 .313.095.564.284.754.196.189.444.283.742.283a.976.976 0 0 0 .72-.283c.19-.197.284-.448.284-.754V4.597h1.474V7.62c0 .743-.236 1.347-.71 1.812-.465.466-1.055.699-1.768.699-.728 0-1.328-.23-1.8-.688-.467-.465-.7-1.073-.7-1.823ZM60.07 1.813h1.473V10h-1.353v-.666c-.371.531-.95.797-1.736.797-.757 0-1.382-.266-1.877-.797-.495-.538-.742-1.215-.742-2.03 0-.815.247-1.488.742-2.02.495-.538 1.12-.807 1.877-.807.684 0 1.223.214 1.616.644V1.813ZM59.7 8.395c.262-.262.393-.625.393-1.091 0-.466-.131-.83-.393-1.092a1.302 1.302 0 0 0-.972-.404c-.4 0-.735.139-1.004.415-.262.277-.393.633-.393 1.07 0 .444.13.804.393 1.08.262.277.597.415 1.004.415.393 0 .717-.13.972-.393ZM62.754 10V4.597h1.474V10h-1.474Zm-.207-7.368c0-.262.09-.48.273-.655a.926.926 0 0 1 .666-.262c.262 0 .483.087.665.262.19.175.284.393.284.655 0 .255-.094.47-.284.644a.926.926 0 0 1-.665.262.926.926 0 0 1-.666-.262.858.858 0 0 1-.273-.644Zm2.581 4.66c-.014-.77.266-1.436.84-1.997a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.851 1.998.015.771-.269 1.44-.851 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.06c.27-.277.404-.626.404-1.048 0-.422-.135-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.743.142-1.005.426-.262.277-.392.63-.392 1.059 0 .422.13.771.392 1.048.262.276.597.415 1.005.415.4 0 .731-.139.993-.415Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a><span class="Header_search_area__18ZCR"><button type="button" class="Header_button_search__Cu5Vz"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="m20.5 20.5 4 4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="14.5" cy="14.5" r="8.175" stroke="currentColor" stroke-width="1.65"></circle></svg><span class="blind">검색</span></button></span><div class="Header_upload_area__RYOr9"><button type="button" class="Header_link_upload__ZGZHe"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M14.5 10v9M19 14.5h-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M3.8 11A7.2 7.2 0 0 1 11 3.8h7a7.2 7.2 0 0 1 7.2 7.2v7a7.2 7.2 0 0 1-7.2 7.2h-7A7.2 7.2 0 0 1 3.8 18v-7Z" stroke="currentColor" stroke-width="1.6"></path></svg><span class="blind">영상 업로드</span></button><div class="Header_upload_tooltip__IWs2i"><span class="Header_tooltip_text__pbCxh">이제 누구나 네이버TV에 영상을 <br class="Header_break_sub__tf6MV"/>올릴 수 있어요!<br class="Header_break_main__WQENw"/>내 채널을 만들고, <br class="Header_break_sub__tf6MV"/>네이버TV 크리에이터에 도전하세요!</span><button type="button" class="Header_tooltip_close__5qrmM"><svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="14" height="14" color="rgba(255, 255, 255, 0.5)"><path d="m2.462 2.462 9.075 9.075M11.537 2.462l-9.075 9.075" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button><svg width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" class="Header_icon_arrow_up__aBor7"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8 9.447.662a1.911 1.911 0 0 0-2.894 0L0 8h16Z" fill="#3C29DF"></path></svg></div></div><span class="Header_profile_area__tEHa3"><button type="button" class="Header_button_login__MrGVT"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M15 14.2a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4Z" stroke="currentColor" stroke-width="1.6"></path><path d="M6 24.714v-.794C6 21.203 8.593 19 11.79 19h6.42c3.197 0 5.79 2.203 5.79 4.92v.794" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg><span class="blind">로그인</span></button></span></div></header><div class="showId_container__MUoqT"><div id="content" class="showId_content__qtuxN"></div></div><footer class="Footer_footer__5bZGY"><div class="Footer_footer_inner__1YE9q"><div class="Footer_corporation_wrap__CHrP5"><div><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/privacy.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.privacy"><strong>개인정보처리방침</strong></a></span><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/service.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.usage">이용약관</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/disclaimer.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.disclaimer">책임의 한계와 법적고지</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://help.naver.com/service/17223/category/bookmark?lang=ko" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.help">고객센터</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://creator.tv.naver.com/join" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.creatorstudio">채널 만들기</a></span><span class="Footer_terms_item__NJ1eG"><a href="/n/policy" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.operation"></a></span></div><p class="Footer_copyright_notice__ECsKu"></p><span class="Footer_copyright__u_mR_"><span class="Footer_icon_naver__bC2Z8" data-nlog-area="footer.naver"><svg viewBox="0 0 53 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="53" height="10"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0 11.08 10h3.316l.476-1.333h3.787L19.136 10h3.315L18.53 0H15Zm1.765 3.21 1.118 3.124h-2.236l1.118-3.124ZM33.167 0v10h7.832V7.5h-4.665V6.166h4.5V3.834h-4.5V2.5h4.665V0h-7.832ZM28.774 0l-2.352 6.575L24.068 0h-3.334l3.922 10h3.53l3.922-10h-3.334ZM6.833 0v5.353L3.187 0H0v10h3.167V4.647L6.813 10H10V0H6.833ZM47.43 4.667h-1.764V2.503h1.755a1.082 1.082 0 0 1 .01 2.164Zm2.218 1.903.303-.126c1.162-.487 1.753-1.54 1.753-2.875 0-1.262-.46-2.198-1.369-2.78C49.49.25 48.395 0 46.887 0h-4.22v10h3.165V7.167h1.14L48.9 10h3.277l-2.529-3.43Z" fill="currentColor"></path></svg><span class="blind">NAVER</span></span><span class="Footer_text__IMN95">Copyright</span><span class="Footer_text__IMN95">© NAVER Corp. All Rights Reserved.</span></span></div></div></footer></div></div>
-
-<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"channelInfo":{"currentLive":null,"currentLives":[],"representClip":{"clipNo":18845374,"title":"맞구독 좋아요^^ 자동차보험료 비교견적사이트","videoId":"234F54F1FE41FC82E1EF18D00D22679809A4","description":"맞구독좋아요^^ 100% 빠르게 친추합니다.\r\nhttp://www.4pcbs.com 자동차보험료 비교견적사이트 입니다.\r\n보험사별 나의 자동차보험료를 알아볼수 있으며,\r\n간편 가입 및 갱신이 가능합니다.","thumbnailImageUrl":"https://phinf.pstatic.net/tvcast/20210307_223/Fac8E_1615116170464QXGy3_JPEG/2fb80513-7f37-11eb-bba0-a0369ff94f34_03.jpg","firstExposureDatetime":"2021-03-07T20:22:50+0900","registerDateTime":"2021-03-07T20:22:50+0900","playCount":2199,"likeItCount":56,"commentCount":null,"optionFields":[{"title":"등록일","description":"2021.03.07"},{"title":"카테고리","description":"자동차"}],"playTime":45,"displayPlayTime":"0:45","orientation":"LANDSCAPE","channelType":null,"channelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelEmblemImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelLogo":null,"channelUrl":"https://tv.naver.com/cardamoa","channelRepresentImageUrl":"","channelCategoryName":null,"brandCode":null,"tags":["맞구독","좋아요","자동차보험료비교견적사이트","다이렉트자동차보험료비교견적","다이렉트자동차보험","자동차보험료계산기"],"authType":"NORMAL_VOD","clipTrailerUrl":null,"shareUrl":null,"recId":null,"airsSessionId":null,"airsBypass":null,"clipType":null,"episodeNo":null,"displayChannelId":"cardamoa","globalService":true,"hash":"YLjtG4ipiiOK","shorts":false,"trailerUrl":null,"smr":false,"multiTrack":false,"opened":true,"channelEmblem":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","highlight":false,"adultVideo":false},"showMenu":null,"channelId":"cardamoa","displayChannelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelHomeUrl":"https://tv.naver.com/cardamoa","channelLogo":"","channelBackgroundImageUrl":"","channelLandscapeBackgroundImageUrl":null,"channelProfileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg","dominantColor":"#326760","description":"자동차보험료 비교견적사이트 \r\n내자동차보험 조회 및 무료견적을 받아보시는 경우\r\n\r\nhttp://www.4pcbs.com 통하여\r\n보험소식 및 다이렉트자동차보험을 보험사별 알아보시기 바랍니다.\r\n무료견적 및 다양한 소식들을 받아보세요.\r\n\r\n다이렉트자동차보험 특약할인등은 보험사별 차이가 있습니다.\r\n갱신전 한번 꼭!! 알아보셔서 \r\n경제적으로 저렴하게 가입해 보시길 바랍니다.","displayBroadcastingTime":"","subscriptionCount":106,"registerDateTime":"2021-02-18T18:29:59+0900","subscription":null,"schedules":[],"channelLinks":[{"url":"http://www.4pcbs.com","description":"자동차보험료비교견적사이트"},{"url":"http://cardamoa.direct-ins.net","description":"다이렉트자동차보험료비교견적"},{"url":"2014posttistory.com","description":"자동차보험료계산기"}],"homeBanners":[],"isOriginal":false,"isCommunityOpen":false,"timefeedInfo":null,"dssId":null,"openTalkCategoryId":null,"brandInfo":null,"talkId":null,"homeClipRecommendCode":"RECENT","categoryName":"자동차","showType":null,"showHostNames":null,"showOriginalTypeCode":null,"isEnd":null,"noticeMessage":null,"promotionBanner":{"pcImageUrl":"https://phinf.pstatic.net/tvcast/20210218_22/oX96k_1613641356623ohgdt_JPEG/1613641356559.jpg","pcLinkUrl":"http://www.4pcbs.com","mobileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_298/FgWQf_1613641368944mFoPV_JPEG/1613641368925.jpg","mobileLinkUrl":"http://www.4pcbs.com","mobileBackgroundColor":"#1D1D1D"},"channelType":"CHANNEL_GENERAL","registerYmdt":1613640599000},"channelType":"CHANNEL_GENERAL","channelBanner":{"channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg"}},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","requestPath":"/cardamoa","serverTime":1762999881568,"__N_SSP":true},"page":"/[showId]","query":{"showId":"cardamoa"},"buildId":"7e991e_b15","assetPrefix":"https://static-now.pstatic.net/now-web-resource/real/7e991e_b15","isFallback":false,"dynamicIds":[4480],"gssp":true,"appGip":true,"scriptLoader":[]}</script></body></html>
 </body>
 </html>
+
 
 
 
@@ -633,6 +570,4 @@
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4is0w4/yb/l/ko_KR/rFkiMP1qMyJ.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4is0w4/yb/l/ko_KR/rFkiMP1qMyJ.js" data-bootloader-hash="mgYHw9T" async="1" crossorigin="anonymous" data-p=":160" data-btmanifest="1027280358_main" data-c="1"></script>
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4iT4H4/yV/l/ko_KR/zWc0yd6V0XD.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4iT4H4/yV/l/ko_KR/zWc0yd6V0XD.js" data-bootloader-hash="cDTWgQH" async="1" crossorigin="anonymous" data-p=":139" data-btmanifest="1027280358_main" data-c="1"></script>
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
-
-
 
